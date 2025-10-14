@@ -8,7 +8,9 @@ jobs:
   runs-on: ubuntu-latest
   steps:
   - name: create a file
-    run: mkdir myfiles
+    run: |
+      mkdir myfiles
+      pwd
   - name: create a file in directory
     run: echo "Hello ALL" > myfiles/file1
   - name: upload the file to github
